@@ -11,23 +11,23 @@
 /** Parsed _data/site.yml. */
 export const SITE = {
   "name": "AI Use Case Catalog",
-  "tagline": "Shared AI solutions from big-city health departments",
-  "description": "A shared catalog of AI use cases, tools, and lessons learned from Big Cities Health Coalition member health departments.",
+  "tagline": "A fresh copy of the BCHC catalog template — configured, emptied of samples, ready for its first entries.",
+  "description": "A fresh copy of the BCHC AI Use Case Catalog template — configured through the setup wizard, sample content removed, ready for a health department’s first entries.",
   "organization": {
-    "name": "Big Cities Health Coalition",
-    "short_name": "BCHC",
+    "name": "Your health department",
+    "short_name": "Health department",
     "url": "https://www.bigcitieshealth.org",
     "contact_email": "info@bigcitieshealth.org"
   },
   "logo": {
     "image": "",
-    "text": "BCHC"
+    "text": "AI"
   },
   "github": {
-    "repository": "crypticpy/bchc-template",
+    "repository": "crypticpy/bchc-catalog-starter",
     "branch": "main"
   },
-  "demo": true,
+  "demo": false,
   "modules": {
     "catalog": true,
     "submit": true,
@@ -36,10 +36,10 @@ export const SITE = {
     "events": false,
     "cohorts": false,
     "resources": false,
-    "governance": true
+    "governance": false
   },
   "hero": {
-    "eyebrow": "Big Cities Health Coalition · AI Community of Practice",
+    "eyebrow": "Your health department · AI Use Case Catalog",
     "title": "What health departments are building with AI",
     "lead": "Browse real solutions from member cities — source code, cloud deployments, vendor implementations and write-ups — and share your own so others can learn, reuse and adapt.",
     "primary_cta": {
@@ -101,7 +101,7 @@ export const SITE = {
         "url": "https://github.com/crypticpy/bchc-template/blob/main/docs/admin-guide.md"
       }
     ],
-    "copyright": "Big Cities Health Coalition",
+    "copyright": "Your health department",
     "accessibility": "This site is built to WCAG 2.1 AA and tested on every build; if something does not work for you, tell us and it will be treated as a defect."
   },
   "analytics": {
@@ -1377,12 +1377,12 @@ export const NAVIGATION = [
 ];
 
 /** Verbatim _config.yml; the wizard patches title/description/url/baseurl into it. */
-export const JEKYLL_CONFIG = "# Jekyll configuration.\n# Most site-specific settings live in _data/site.yml (branding, modules, labels),\n# _data/theme.yml (colors, fonts) and _data/schema.yml (the entry content model).\n# Keep this file to build mechanics. `title`/`description` here are fallbacks for\n# SEO tags; the setup wizard keeps them in sync with _data/site.yml.\n\ntitle: \"AI Use Case Catalog\"\ndescription: \"A shared catalog of AI use cases, tools, and lessons learned from Big Cities Health Coalition member health departments.\"\nurl: \"\"\nbaseurl: \"\"\ntheme: null\ntimezone: \"America/Chicago\"\nmarkdown: kramdown\npermalink: pretty\nfuture: false\n\nexclude:\n  - node_modules\n  - vendor\n  - README.md\n  - ARCHITECTURE.md\n  - CONTRIBUTING.md\n  - CODE_OF_CONDUCT.md\n  - CHANGELOG.md\n  - SECURITY.md\n  - CLAUDE.md\n  - AGENTS.md\n  - LICENSE\n  - package-lock.json\n  - package.json\n  - tailwind.config.js\n  - postcss.config.js\n  - eslint.config.js\n  - quality\n  - assets/css/tailwind.css\n  - scripts\n  - test\n  - docs\n  - Gemfile\n  - Gemfile.lock\n  - .ruby-version\n\n# If you change entry.path in _data/schema.yml, change the first scope's path\n# here to match — this is what gives every entry the `entry` layout.\ndefaults:\n  - scope:\n      path: \"catalog\"\n    values:\n      layout: entry\n  - scope:\n      path: \"cohorts\"\n    values:\n      layout: cohort\n\nplugins:\n  - jekyll-seo-tag\n  - jekyll-sitemap\n  - jekyll-include-cache\n\nsass:\n  style: compressed\n";
+export const JEKYLL_CONFIG = "# Jekyll configuration.\n# Most site-specific settings live in _data/site.yml (branding, modules, labels),\n# _data/theme.yml (colors, fonts) and _data/schema.yml (the entry content model).\n# Keep this file to build mechanics. `title`/`description` here are fallbacks for\n# SEO tags; the setup wizard keeps them in sync with _data/site.yml.\n\ntitle: \"AI Use Case Catalog\"\ndescription: \"A fresh copy of the BCHC AI Use Case Catalog template — configured through the setup wizard, sample content removed, ready for a health department’s first entries.\"\nurl: \"\"\nbaseurl: \"\"\ntheme: null\ntimezone: \"America/Chicago\"\nmarkdown: kramdown\npermalink: pretty\nfuture: false\n\nexclude:\n  - node_modules\n  - vendor\n  - README.md\n  - ARCHITECTURE.md\n  - CONTRIBUTING.md\n  - CODE_OF_CONDUCT.md\n  - CHANGELOG.md\n  - SECURITY.md\n  - CLAUDE.md\n  - AGENTS.md\n  - LICENSE\n  - package-lock.json\n  - package.json\n  - tailwind.config.js\n  - postcss.config.js\n  - eslint.config.js\n  - quality\n  - assets/css/tailwind.css\n  - scripts\n  - test\n  - docs\n  - Gemfile\n  - Gemfile.lock\n  - .ruby-version\n\n# If you change entry.path in _data/schema.yml, change the first scope's path\n# here to match — this is what gives every entry the `entry` layout.\ndefaults:\n  - scope:\n      path: \"catalog\"\n    values:\n      layout: entry\n  - scope:\n      path: \"cohorts\"\n    values:\n      layout: cohort\n\nplugins:\n  - jekyll-seo-tag\n  - jekyll-sitemap\n  - jekyll-include-cache\n\nsass:\n  style: compressed\n";
 
 /** The build-mechanics values _config.yml ships with. */
 export const JEKYLL_DEFAULTS = {
   "title": "AI Use Case Catalog",
-  "description": "A shared catalog of AI use cases, tools, and lessons learned from Big Cities Health Coalition member health departments.",
+  "description": "A fresh copy of the BCHC AI Use Case Catalog template — configured through the setup wizard, sample content removed, ready for a health department’s first entries.",
   "url": "",
   "baseurl": "",
   "timezone": "America/Chicago"

@@ -98,7 +98,7 @@ export const SITE = {
       },
       {
         "label": "Maintainer guide",
-        "url": "https://github.com/crypticpy/bchc-template/blob/main/docs/admin-guide.md"
+        "url": "https://github.com/crypticpy/bchc-catalog-starter/blob/main/docs/admin-guide.md"
       }
     ],
     "copyright": "Your health department",

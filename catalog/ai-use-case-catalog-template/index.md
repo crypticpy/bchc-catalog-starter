@@ -15,7 +15,7 @@ area:
 stage: In production
 summary: "A GitHub-Pages catalog template for sharing AI use cases across health departments. Entries are submitted through a form that opens a GitHub issue, reviewed as a pull request, and published on merge — no server, no database, no CMS login."
 impact: A member catalog goes from template to live, configured site in about 40 minutes.
-review_status: Under review
+review_status: Reviewed & approved
 ai_role: AI was used to build it
 ai_types:
   - Generative text (LLM)

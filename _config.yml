@@ -5,7 +5,7 @@
 # SEO tags; the setup wizard keeps them in sync with _data/site.yml.
 
 title: "AI Use Case Catalog"
-description: "A shared catalog of AI use cases, tools, and lessons learned from Big Cities Health Coalition member health departments."
+description: "A fresh copy of the BCHC AI Use Case Catalog template — configured through the setup wizard, sample content removed, ready for a health department’s first entries."
 url: ""
 baseurl: ""
 theme: null
